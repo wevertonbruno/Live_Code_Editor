@@ -1,0 +1,82 @@
+:root{
+    --m-color:rgb(219, 219, 219);
+    --p-color: rgb(37, 37, 37);
+    --p-color-a: rgba(37, 37, 37, .2);
+}
+
+.main-color{
+    background-color: var(--m-color);
+}
+
+.secondary-color{
+    background-color: var(--p-color);
+    color: var(--m-color);
+}
+
+.panel-header{
+    background-color: var(--m-color);
+}
+
+#text-container{
+    background-color: var(--p-color);
+}
+
+.toggle-color:checked ~ label{
+    background-color: var(--p-color);
+    color: var(--m-color);
+    
+}
+
+#text-container{
+    color: var(--m-color);
+}
+
+#screen-live{
+    background-color: var(--m-color);
+    background-image: url('../images/phone2-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+    position: relative;
+}
+
+#code{
+    position: absolute;
+    top: 66px;
+    left: 12px;
+    width: 272px;
+    height: 472px;
+    border: none;
+    overflow: auto;
+}
+
+::-webkit-scrollbar, #code::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track, #code::-webkit-scrollbar-track {
+    box-shadow: inset 0px 0px 5px gray; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #777; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #222; 
+  }
+
+  iframe{
+    scrollbar-face-color: #ff8c00; 
+    scrollbar-track-color: #fff8dc; 
+    scrollbar-arrow-color: #ffffff; 
+    scrollbar-highlight-color: #fff8dc; 
+    scrollbar-shadow-color: #d2691e; 
+    scrollbar-3dlight-color: #ffebcd; 
+    scrollbar-darkshadow-color: #8b0000; 
+  }
